@@ -1,0 +1,23 @@
+@media (max-width: 1439px) {
+  .main-nav-toggle {
+    display: none;
+    &:checked {
+      & ~ .main-header {
+        .main-header__nav-container {
+          transform: translateX(0);
+        }
+        .hamburger-line {
+          &--1 {
+            transform: rotate(45deg);
+          }
+          &--2 {
+            transform: scaleY(0);
+          }
+          &--3 {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}

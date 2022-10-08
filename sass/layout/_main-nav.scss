@@ -1,0 +1,16 @@
+@use '../abstracts/mixins';
+
+.main-nav {
+  &__list {
+    @include mixins.display-flex(column);
+    @media (min-width:1440px) {
+      flex-direction: row;
+    }
+  }
+  &__item {
+
+  }
+  &__link {
+
+  }
+}

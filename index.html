@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin > -->
+  <!-- Fonte del Proyecto Raleway -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <title>Mi Portafolio</title>
+</head>
+
+<body>
+  <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+  <!-- Sección del Menú  -->
+  <header class="main-header">
+    <div class="main-header__title-container">
+      <img class="main-header__title-icon" src="./assets/vector.png" alt="vector">
+      <h3 class="main-header__title">César Moros</h3>
+    </div>
+    <div class="main-header__nav-container">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#about-me">Sobre mi</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#formacion">Formación</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#xp">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-header__contact-container">
+      <div class="main-header__contact">
+        <a class="main-header__contact-link" href="#contact">Contáctame!</a>
+      </div>
+    </div>
+    <div class="main-header__hamburger-button-container">
+      <label class="hamburger-button" for="main-nav-toggle">
+        <span class="hamburger-line hamburger-line--1"></span>
+        <span class="hamburger-line hamburger-line--2"></span>
+        <span class="hamburger-line hamburger-line--3"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <div class="main">
+      <!-- Sección del Header/Title/Hero -->
+      <div class="main__title-container">
+        <section class="title">
+          <img class="title__profile" src="./assets/profile.png" alt="profile">
+          <div class="title__content-container">
+            <div class="title__content">
+              <div class="title__bio-container">
+                <h2 class="title__bio">
+                  Hola, mi nombre es César Moros y construyo paginas web
+                </h2>
+              </div>
+              <div class="title__description-container">
+                <h3 class="title__description">
+                  Soy formada en el FullStack-engineer en EducacionIT y
+                  actualmente estoy participando del proyecto Oracle ONE en
+                  Alura Latam.
+                </h3>
+              </div>
+              <div class="title__network-container">
+                <ul class="title__network-list">
+                  <li class="title__network-item">
+                    <a href="" class="title__network-link">Github
+                      <img class="title__network-icon" src="./assets/arrow.png" alt="arrow">
+                    </a>
+                  </li>
+                  <li class="title__network-item">
+                    <a href="" class="title__network-link">Linkedin
+                      <img class="title__network-icon" src="./assets/arrow.png" alt="arrow"></a>
+                  </li>
+                  <li class="title__network-item">
+                    <a href="" class="title__network-link">Instagram
+                      <img class="title__network-icon" src="./assets/arrow.png" alt="arrow"></a>
+                  </li>
+                  <li class="title__network-item">
+                    <a href="" class="title__network-link">Currículo
+                      <img class="title__network-icon" src="./assets/arrow.png" alt="arrow"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sección sobre mi -->
+      <div class="main__about-container">
+        <section class="about" id="about-me">
+          <div class="about__title-container">
+            <h3 class="about__title">Sobre mi</h3>
+          </div>
+          <div class="about__paragraph-container">
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque velit velit, volutpat semper dignissim dictum,
+              imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+              Suspendisse potenti. Ut semper sagittis ligula et lacinia.
+            </p>
+          </div>
+          <div class="about__paragraph-container">
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque velit velit, volutpat semper dignissim dictum,
+              imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+              Suspendisse potenti. Ut semper sagittis ligula et lacinia.
+              Aenean sit amet felis venenatis, egestas metus vitae, aliquet
+              metus.
+            </p>
+          </div>
+          <!-- Si quieres, pon tú firma acá! -->
+          <div class="about__signature-container">
+            <img class="about__signature" src="./assets/signature.png" alt="signature">
+          </div>
+        </section>
+      </div>
+
+      <!-- Sección de Skills -->
+      <div class="main__section-card-container main__section-card-container--skills">
+        <section class="section-card" id="skills">
+          <h3 class="section-card__header">Skills</h3>
+          <div class="section-card__content">
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/html_icon.png" alt="html">
+                </div>
+                <h4 class="card__title">HTML 5</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/js_icon.png" alt="javascript">
+                </div>
+                <h4 class="card__title">Javascript</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/php_icon.png" alt="php">
+                </div>
+                <h4 class="card__title">PHP</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/nodejs_icon.png" alt="node js">
+                </div>
+                <h4 class="card__title">Node JS</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/react_icon.png" alt="react">
+                </div>
+                <h4 class="card__title">React</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/css_icon.png" alt="css">
+                </div>
+                <h4 class="card__title">CSS</h4>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sección de Hobbies -->
+      <div class="main__section-card-container main__section-card-container--hobbies">
+        <section class="section-card" id="hobbies">
+          <h3 class="section-card__header">Hobbies</h3>
+          <div class="section-card__content">
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/skate_icon.png" alt="temp">
+                </div>
+                <h4 class="card__title">Patinaje</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/guitar_icon.png" alt="">
+                </div>
+                <h4 class="card__title">Tocar bajo</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/headphones_icon.png" alt="">
+                </div>
+                <h4 class="card__title">Oir música</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/tv_icon.png" alt="">
+                </div>
+                <h4 class="card__title">Ver séries</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/forkspoon_icon.png" alt="">
+                </div>
+                <h4 class="card__title">Cocinar</h4>
+              </article>
+            </div>
+            <div class="section-card__card-container">
+              <article class="card">
+                <div class="card__img-container">
+                  <img class="card__img" src="./assets/camera_icon.png" alt="">
+                </div>
+                <h4 class="card__title">Tomar fotos</h4>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sección de Formación académica -->
+      <div class="main__academic-container">
+        <section class="academic" id="formacion">
+          <h2 class="academic__header">Formación académica</h2>
+          <div class="academic__courses">
+            <div class="academic__courses-content">
+              <ul class="academic__list">
+                <!-- Pon el logotipo de la institución de formación -->
+                <li class="academic__item academic__item--img">
+                  <img class="academic__img" src="./assets/ufpr_logo.png" alt="temp">
+                </li>
+                <li class="academic__item academic__item--title">
+                  <h4 class="academic__career">Análisis de datos</h4>
+                </li>
+                <li class="academic__item academic__item--subtitle">
+                  <p class="academic__time">2018 - UFPR</p>
+                </li>
+              </ul>
+            </div>
+            <div class="academic__courses-content">
+              <ul class="academic__list">
+                <!--Pon el logotipo de la institución de formación -->
+                <li class="academic__item academic__item--img">
+                  <img class="academic__img" src="./assets/alura_logo.png" alt="temp">
+                </li>
+                <li class="academic__item academic__item--title">
+                  <h4 class="academic__career">Formación en UX Design</h4>
+                </li>
+                <li class="academic__item academic__item--subtitle">
+                  <p class="academic__time">2019 - Alura</p>
+                </li>
+              </ul>
+            </div>
+            <div class="academic__courses-content">
+              <ul class="academic__list">
+                <!-- Pon el logotipo de la institución de formación -->
+                <li class="academic__item academic__item--img">
+                  <img class="academic__img" src="./assets/ufrj_logo.png" alt="temp">
+                </li>
+                <li class="academic__item academic__item--title">
+                  <h4 class="academic__career">Posgrado en diseño</h4>
+                </li>
+                <li class="academic__item academic__item--subtitle">
+                  <p class="academic__time">En curso - UFRJ</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sección de Experiencia Profesional/Proyectos-->
+      <div class="main__experience-container">
+        <section class="experience" id="xp">
+          <h2 class="experience__header">Experiencia Profissional</h2>
+          <article class="experience__article">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experience__img" src="./assets/decod_print.png" alt="temp">
+            <div class="experience__info">
+              <h2 class="experience__title">Encriptador de texto</h2>
+              <h3 class="experience__subtitle">Challenge Alura Codificador</h3>
+              <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a
+                    href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><span
+                      class="experience__link btn btn--light">
+                      Repositorio
+                    </span></a></span>
+                <span class="experience__demo">
+                  <a href="" class="experience__link btn btn--dark">Ver demo</a>
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="experience__article">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experience__img" src="./assets/forca_print.png" alt="temp">
+            <div class="experience__info">
+              <h2 class="experience__title">
+                Juego creado con HTML y JavaScript
+              </h2>
+              <h3 class="experience__subtitle">Challenge Oracle</h3>
+              <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a
+                    href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><span
+                      class="experience__link btn btn--light">
+                      Repositorio
+                    </span></a></span>
+                <span class="experience__demo"><a href="" class="experience__link btn btn--dark">Ver demo</a></span>
+              </div>
+            </div>
+          </article>
+          <article class="experience__article">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experience__img" src="./assets/secretcode_print.png" alt="temp">
+            <div class="experience__info-container">
+              <h2 class="experience__title">Encriptador de texto</h2>
+              <h3 class="experience__subtitle">Challenge Oracle</h3>
+              <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a
+                    href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><span
+                      class="experience__link btn btn--light">
+                      Repositorio
+                    </span></a></span>
+                <span class="experience__demo"><a href="" class="experience__link btn btn--dark">Ver demo</a></span>
+              </div>
+            </div>
+          </article>
+          <article class="experience__article">
+            <img class="experience__img" src="./assets/forca2_print.png" alt="temp">
+            <div class="experience__info-container">
+              <h2 class="experience__title">
+                Juego creado con HTML, CSS y JavaScript
+              </h2>
+              <h3 class="experience__subtitle">Challenge Oracle</h3>
+              <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a
+                    href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><span
+                      class="experience__link btn btn--light">
+                      Repositorio
+                    </span></a></span>
+                <span class="experience__demo"><a href="" class="experience__link btn btn--dark">Ver demo</a></span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <!-- Sección de Contacto -->
+      <div class="main__form-contact-container">
+        <section class="form-contact" id="contact">
+
+          <div class="form-contact">
+            <img class="form-contact__img" src="./assets/contact_image.png" alt="temp">
+          </div>
+          <div class="form-contact__text">
+            <h2 class="form-contact__title">Contacto</h2>
+            <h3 class="form-contact__subtext">¿Quieres contactarme?</h3>
+            <h3 class="form-contact__subtext">
+              Complete el siguiente formulario y me pondré en contacto con
+              usted lo antes posible.
+            </h3>
+            <div class="form-contact__form-container">
+              <form class="form" action="">
+                <div class="form__input-group">
+                  <label class="form__label" for="name">Nombre</label>
+                  <input class="form__input" type="text" name="name" id="name">
+                </div>
+                <div class="form__input-group">
+                  <label class="form__label" for="email">E-mail</label>
+                  <input class="form__input" type="email" name="email" id="email">
+                </div>
+                <div class="form__input-group">
+                  <label class="form__label" for="subject">Asunto</label>
+                  <input class="form__input" type="text" name="subject" id="subject">
+                </div>
+                <div class="form__input-group">
+                  <label class="form__label" for="message">Mensaje</label>
+                  <textarea class="form__textarea" rows="5" cols="40" id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="form__submit btn btn--dark">
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <!-- Sección de Footer -->
+  <footer class="main-footer">
+    <div class="footer__rodape">
+      <p>Desarrollado por Fulana de Tal</p>
+      <p>2022</p>
+    </div>
+  </footer>
+  <!-- Script del documento JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
