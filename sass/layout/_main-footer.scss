@@ -1,3 +1,12 @@
+@use '../abstracts/mixins';
+
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.main-footer {
+  padding: 2rem 0 2rem;
+  @include mixins.display-flex(column);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

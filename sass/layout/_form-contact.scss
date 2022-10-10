@@ -1,11 +1,20 @@
 .form-contact {
+  padding: 1rem 2rem 2rem;
+  background: #EAF2FD;
+  &__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   &__title {
-
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
   }
   &__subtext {
 
   }
   &__form-container {
-
+    padding: 2rem 0 0;
   }
 }

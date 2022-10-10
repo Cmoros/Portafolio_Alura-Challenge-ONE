@@ -1,34 +1,54 @@
-.title {
-  &__profile {
+@use '../abstracts/mixins';
 
+.title {
+  padding: 0 1rem;
+  &__profile {
+    width: 98px;
+    height: 98px;
+    object-fit: contain;
+    border-radius: 50%;
   }
   &__content {
     &-container {
-
+      padding: 0.5rem 0;
     }
   }
   &__bio {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
     &-container {
-
+      padding: 0.5rem 0;
     }
   }
   &__description {
+    font-size: 14px;
+    line-height: 1rem;
     &-container {
-
+      padding: 0.5rem 0;
     }
   }
   &__network {
     &-container {
-
+      padding: 0.5rem 0;
+      
     }
     &-list {
-
+      @include mixins.display-flex(row, space-between, stretch);
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
     &-item {
-
+      flex: none;
+      flex-basis: 40%;
+      @media (min-width: 375px) {
+        flex: auto;
+      }
     }
     &-link {
-      
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
     }
     &-icon {
 

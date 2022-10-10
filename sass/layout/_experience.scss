@@ -1,24 +1,49 @@
-.experience {
-  &__header {
+@use '../abstracts/mixins';
 
+
+.experience {
+  padding: 1rem 2rem 2rem;
+  &__header {
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__content {
+    @include mixins.display-flex(column, stretch, stretch);
+    gap: 4rem;
   }
   &__article {
-
+    @include mixins.display-flex(column, stretch, stretch);
+    gap: 1rem;
   }
   &__img {
-
+    height: 100%;
+    // max-width: calc(100vw - 4rem);
+    object-fit: contain;
+    &-container {
+      overflow: hidden;
+      width: 100%;
+      @include mixins.display-flex;
+      height: 144px;
+    }
   }
   &__info {
-
+    @include mixins.display-flex(column, stretch, stretch);
+    gap: 0.5rem;
   }
   &__title {
-
+    line-height: 19px;
+    font-weight: 700;
   }
   &__subtitle {
-
+    font-size: 14px;
+    line-height: 16px;
   }
   &__description {
-
+    @include mixins.display-flex(row, flex-start, stretch);
+    gap: 1rem;
   }
   &__repo {
 

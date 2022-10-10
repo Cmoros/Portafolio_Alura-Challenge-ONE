@@ -1,11 +1,23 @@
 .section-card {
+  padding: 0rem 1rem;
+  
   &__header {
-
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 1rem 0 1rem;
   }
   &__content {
-
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
   }
   &__card-container {
+    padding: 0.5rem 0;
+    height: 120px;
+    flex: 1 0 40%;
     
   }
 }
