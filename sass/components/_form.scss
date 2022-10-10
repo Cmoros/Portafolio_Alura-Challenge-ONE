@@ -7,10 +7,14 @@
     padding: 1.5rem 0.75rem 0.25rem;
     border-radius: 0.25rem;
     border: none;
+    outline: none;
     border-bottom: 1px solid #A2A2A2;
     min-width: 0;
     line-height: 1.25rem;
     width: 100%;
+    @media (min-width: 768px) {
+      border-width: 2px;
+    }
     &::placeholder {
       color: white;
     }
@@ -21,9 +25,17 @@
         font-size: 0.75rem;
       }
     }
+    &:focus {
+      border-color: #2A7AE4;
+    }
     &-group {
       // @include mixins.display-flex;
       position: relative;
+      &:focus-within {
+        .form__label {
+          color: #2A7AE4;
+        }
+      }
       &--textarea {
         
       }
@@ -42,12 +54,16 @@
   &__textarea {
     line-height: 1.25rem;
     border: none;
-    border-bottom: 1px solid #A2A2A2;
+    border-bottom: 2px solid #A2A2A2;
     border-radius: 0.25rem;
     min-width: 0;
+    outline: none;
     padding: 1.5rem 0.75rem 0.25rem;
     width: 100%;
     resize: none;
+    @media (min-width: 768px) {
+      border-width: 2px;
+    }
     &::placeholder {
       color: white;
     }
@@ -57,6 +73,9 @@
         top: 0.5rem;
         font-size: 0.75rem;
       }
+    }
+    &:focus {
+      border-color: #2A7AE4;
     }
   }
 

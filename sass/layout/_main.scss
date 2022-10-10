@@ -4,7 +4,7 @@
 
   }
   &__about-container {
-
+    background-color: #EAF2FD;
   }
   &__section-card-container {
     &--skills {
@@ -14,10 +14,14 @@
       
     }
   }
-  &__experience-container {
+  &__academic-container {
+    background-color: #EAF2FD;
 
   }
+  &__experience-container {
+  }
   &__form-contact-container {
-    
+    background-color: #EAF2FD;
+    padding: 4rem 0 2rem;
   }
 }
