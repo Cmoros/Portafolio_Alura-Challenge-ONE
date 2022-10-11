@@ -34,6 +34,8 @@
 @use 'components/section-card';
 @use 'components/card';
 
+@use 'components/error-popup';  // Must be last
+
 
 // 6. Page-specific styles
 @use 'pages/home';

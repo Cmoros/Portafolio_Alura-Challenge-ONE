@@ -30,8 +30,11 @@
     }
   }
   &__content {
+    @include mixins.display-flex(column, space-between, stretch);
+    height: 100%;
     &-container {
       // padding: 0rem 0 0.5rem;
+      flex: 1;
     }
   }
   &__bio {

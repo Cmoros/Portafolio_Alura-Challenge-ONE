@@ -658,6 +658,16 @@ html {
     height: 368px;
   }
 }
+.title__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+.title__content-container {
+  flex: 1;
+}
 .title__bio {
   font-size: 22px;
   font-weight: 700;
@@ -933,6 +943,26 @@ html {
   align-items: center;
   font-weight: 700;
   line-height: 19px;
+}
+
+.error-popup {
+  font-size: 0.7rem;
+  color: #cb7678;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 0;
+  padding: 0.5em;
+}
+@media (min-width: 768px) {
+  .error-popup {
+    bottom: -1.5rem;
+    font-size: 0.9rem;
+  }
+}
+.error-popup__input-error {
+  background-color: #f1c3c4;
 }
 
 /*# sourceMappingURL=main.css.map */
