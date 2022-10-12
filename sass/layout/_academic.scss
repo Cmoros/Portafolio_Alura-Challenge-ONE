@@ -1,8 +1,8 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+@use "../abstracts/functions";
 
 .academic {
-  background-color: #eaf2fd;
   padding: 1rem 2rem;
   max-width: variables.$max-width;
   margin: auto;
@@ -41,7 +41,7 @@
     &--img {
       height: 120px;
       padding: 2rem;
-      background-color: white;
+      background-color: functions.css-variable(sec-color);
       @include mixins.display-flex;
     }
     &--title {

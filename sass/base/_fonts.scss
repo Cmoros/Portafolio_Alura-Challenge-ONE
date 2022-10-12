@@ -1,11 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+@use '../abstracts/functions';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
-html {
+header, main, footer {
   font-family: 'Raleaway', sans-serif;
-  color: #464646;
+  color: functions.css-variable(main-color);
 }
 
 * {

@@ -33,6 +33,8 @@
 @use 'components/form';
 @use 'components/section-card';
 @use 'components/card';
+@use 'components/github-link';
+@use 'components/linkedin-link';
 
 @use 'components/error-popup';  // Must be last
 
@@ -42,3 +44,4 @@
 
 // 7. Themes
 @use 'themes/default';
+@use 'themes/dark';

@@ -60,6 +60,23 @@ $breakpoints: (
 ) !default;
 
 
+:root {
+  --main-color: #464646;
+  --sec-color: white;
+  --uti1-color: white;
+  --uti2-color: #2A7AE4;
+
+  --main-bgcolor: #E5E5E5;    // main primary
+  --sec-bgcolor: #EAF2FD;     // main secondary
+  --thi-bgcolor: #f5f5f5;     // Header
+  --uti1-bgcolor: #2A7AE4;
+  --uti2-bgcolor: transparent;
+
+  --border-btn: #2A7AE4;
+
+  --muted-input1: #A2A2A2;
+  --bg-input1: white;
+}
 
 
 
@@ -69,3 +86,5 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'https://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+
