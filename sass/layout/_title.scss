@@ -94,16 +94,7 @@
       }
     }
     &-icon {
-      svg {
-        width:1rem;
-        height: 1rem;
-        path {
-          fill: functions.css-variable(main-color);
-        }
-      }
-      @media (min-width: 1440px) {
-        
-      }
+      padding-left: 0.25rem;
     }
   }
   

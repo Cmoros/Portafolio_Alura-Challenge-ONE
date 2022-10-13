@@ -461,6 +461,7 @@ header, main, footer {
 }
 .academic__item--img {
   height: 120px;
+  object-fit: contain;
   padding: 2rem;
   background-color: var(--sec-color);
   display: flex;
@@ -760,13 +761,10 @@ header, main, footer {
     gap: 0.25rem;
   }
 }
-.title__network-icon svg {
-  width: 1rem;
-  height: 1rem;
+.title__network-icon {
+  padding-left: 0.25rem;
 }
-.title__network-icon svg path {
-  fill: var(--main-color);
-}
+
 .main-footer {
   transition: background 0.5s, color 0.5s;
   background-color: var(--thi-bgcolor);
@@ -997,6 +995,7 @@ header, main, footer {
   padding: 1rem;
   height: 100%;
   background-color: var(--uti1-color);
+  transition: background-color 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1005,6 +1004,8 @@ header, main, footer {
 }
 .card__img-container {
   font-size: 2rem;
+  transition: color 0.5s;
+  color: var(--uti2-color);
 }
 .card__title {
   display: flex;

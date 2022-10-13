@@ -40,6 +40,7 @@
   &__item {
     &--img {
       height: 120px;
+      object-fit: contain;
       padding: 2rem;
       background-color: functions.css-variable(sec-color);
       @include mixins.display-flex;
