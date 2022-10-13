@@ -6,7 +6,6 @@ class Experience {
     this.getGithubData().then(async (data) => {
       this.selfStarredRepos = data;
       this.reposInfo = await this.getReposInfo();
-      console.log(this.reposInfo);
       this.articles = [];
       this.createArticlesFromRepos();
     });
@@ -23,7 +22,6 @@ class Experience {
     <img class="experience__img" src="${this.imagesUrl}/${
         repo.name
       }.png" alt="${name} image">
-
   </div>
   <div class="experience__info">
     <h2 class="experience__title">${name}</h2>
@@ -51,17 +49,19 @@ class Experience {
   }
 
   async getReposInfo() {
-    return Promise.all(this.selfStarredRepos.map(async (repo) =>{
-      const { name, description, html_url, homepage, languages_url } = repo;
-      const languages = await this.getLanguages(languages_url);
-      return {
-        name,
-        description,
-        html_url,
-        homepage,
-        languages,
-      };
-    }))
+    return Promise.all(
+      this.selfStarredRepos.map(async (repo) => {
+        const { name, description, html_url, homepage, languages_url } = repo;
+        const languages = await this.getLanguages(languages_url);
+        return {
+          name,
+          description,
+          html_url,
+          homepage,
+          languages,
+        };
+      })
+    );
   }
 
   async getGithubData() {
@@ -69,7 +69,11 @@ class Experience {
       `https://api.github.com/users/${this.githubUser}/starred`
     );
     const data = await response.json();
-    return data.filter(repo => repo.owner.login.toLowerCase() == this.githubUser.toLowerCase() && repo.homepage);
+    return data.filter(
+      (repo) =>
+        repo.owner.login.toLowerCase() == this.githubUser.toLowerCase() &&
+        repo.homepage
+    );
   }
 
   async getLanguages(languagesUrl) {
