@@ -75,7 +75,7 @@ En esta ocasión, se agarró el concepto principal de la [plantilla propuesta po
 
 Responsive Design y Ejemplo de navegación
 
-
+https://user-images.githubusercontent.com/93099135/197118611-db7ca417-e8f3-46e2-9c59-c44a0c0de1e9.mp4
 
 ---
 
