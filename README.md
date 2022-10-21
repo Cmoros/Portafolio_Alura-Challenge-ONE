@@ -1,6 +1,6 @@
 # Portafolio - Alura Challenge - Challenge ONE
 
-### Sprint 021- Challenge ONE: Front End
+### Sprint 01 - Challenge ONE: Front End
 
 Fue ideado para colocar en práctica los conocimientos adquiridos en la ruta de FrontEnd de Alura, destacando el HTML, CSS, accesibilidad y diseño responsive.
 
