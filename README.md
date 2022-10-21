@@ -79,4 +79,4 @@ Responsive Design y Ejemplo de navegación
 
 ---
 
-## [🔗Link a GitHub Page del proyecto](https://cmoros.github.io/Portafolio_Alura-Challenge-ONE/))
+## [🔗Link a GitHub Page del proyecto](https://cmoros.github.io/Portafolio_Alura-Challenge-ONE/)
