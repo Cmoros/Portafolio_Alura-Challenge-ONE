@@ -1069,6 +1069,7 @@ header, main, footer {
   }
 }
 .error-popup__input-error {
+  color: black;
   background-color: #f1c3c4;
 }
 @keyframes translate-right {
